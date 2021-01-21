@@ -4,6 +4,8 @@
     border-bottom: 1px solid #000;
     margin: auto;
 }
+
+
  #dino {
      width: 100px;
      height: 100px;
@@ -21,18 +23,20 @@
      position: relative;
      top: 390px;
      left: 750px;
-     animation: cactusMov 1.2s infinite linear;   
+     animation: cactusMov 1.3s infinite linear;
  }
 
- @keyframes cactusMov {
-      0% {
-          left: 780px;
-      }
+@keyframes cactusMov {
+    
+    0% {
+        left: 780px;
+    }
 
-      100% {
-          left: -20px;
-      }
- }
+    100% {
+        left: -20px;
+    }
+}
+ 
 
  .jump {
      animation: jump 0.3s linear;

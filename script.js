@@ -1,3 +1,4 @@
+
 const dino =document.getElementById("dino");
 const cactus =document.getElementById("cactus");
 
@@ -11,13 +12,13 @@ function jump () {
    }
    setTimeout(function() {
        dino.classList.remove("jump")
-   }, 500)
+   }, 700)
 }
 
 let isAlive = setInterval(function () {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
     
-    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >=300) {alert("GAME OVER!")
+    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >=300) {alert("START NEW GAME!")
 }
-}, 10)
+}, 10);
